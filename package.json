@@ -1,10 +1,11 @@
 {
   "name": "pet-match-web",
   "version": "1.0.0",
-  "main": "index.html",
+  //"main": "index.html",
   "scripts": {
-    "build": "echo \"Build test\" && exit 0",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "echo \"Build not needed for static site\" && exit 0",
+    //"deploy": "firebase deploy",
   },
   "repository": {
     "type": "git",
