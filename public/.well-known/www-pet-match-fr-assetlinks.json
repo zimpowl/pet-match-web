@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.zimpo.petmatch",
+      "sha256_cert_fingerprints": [
+        "6C:48:F2:C0:BC:36:9D:A6:F4:E7:B4:E4:BA:D9:E9:D7:A4:E6:D5:61:2E:27:22:44:91:E2:EF:7D:9B:92:68:6B"
+      ]
+    }
+  }
+]

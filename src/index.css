@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@theme {
+  /* Light Theme */
+  --color-primary: #8E4D30;
+  --color-on-primary: #FFFFFF;
+  --color-primary-container: #FFDBCD;
+  --color-on-primary-container: #71361B;
+  --color-secondary: #77574B;
+  --color-background: #FFF8F6;
+  --color-on-background: #231A16;
+  --color-surface: #FFF8F6;
+  --color-on-surface: #231A16;
+  --color-outline: #85736D;
+  --color-surface-container: #FCEAE4;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(5deg); }
+  50% { transform: translateY(-15px) rotate(7deg); }
+  100% { transform: translateY(0px) rotate(5deg); }
+}
+@keyframes float-slow {
+  0% { transform: translateY(0px) rotate(-15deg); }
+  50% { transform: translateY(-10px) rotate(-12deg); }
+  100% { transform: translateY(0px) rotate(-15deg); }
+}
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+
+@keyframes float-alt {
+  0% { transform: translateY(0px) rotate(-10deg); }
+  50% { transform: translateY(15px) rotate(-12deg); }
+  100% { transform: translateY(0px) rotate(-10deg); }
+}
+.animate-float-alt { animation: float-alt 5s ease-in-out infinite; }
