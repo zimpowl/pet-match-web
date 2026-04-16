@@ -3,7 +3,7 @@ export default function Navbar() {
         <nav className="flex items-center justify-between p-6 bg-white border-b border-gray-100 sticky top-0 z-50">
             <div className="flex items-center gap-2">
                 <span className="text-2xl">🐾</span>
-                <span className="text-xl font-bold tracking-tight text-gray-900">Pet Match</span>
+                <span className="text-xl font-bold tracking-tight text-gray-900">PetMatch</span>
             </div>
             <div className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
                 <a href="#" className="hover:text-orange-500 transition">Accueil</a>
