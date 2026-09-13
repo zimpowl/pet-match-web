@@ -69,8 +69,16 @@ export const terms = {
           "Vous restez **titulaire des droits** sur les photos que vous publiez. Vous " +
           "accordez à PetMatch une licence non exclusive, gratuite et mondiale pour les " +
           "afficher dans l'application, sur ce site et sur les objets que vous commandez, " +
-          "pour la durée de leur publication et dans la limite de ce qui est nécessaire au " +
-          "service." },
+          "et pour **annoncer les résultats des concours sur les comptes officiels de " +
+          "PetMatch**, réseaux sociaux compris." },
+        { type: 'p', text:
+          "Cette licence est limitée à la communication de PetMatch **sur ses propres " +
+          "concours**. Elle n'autorise ni la revente de vos photos, ni leur usage " +
+          "publicitaire pour un tiers. Vous pouvez demander à en être retiré à tout moment " +
+          "(article 6 de la charte de publication)." },
+        { type: 'p', text:
+          "Les publications d'un concours sont **publiques et partageables** par tout le " +
+          "monde, dans les conditions de l'article 7 de la charte." },
         { type: 'p', text:
           "Vous garantissez détenir les droits sur ce que vous publiez et respecter la " +
           "**charte de publication**." },

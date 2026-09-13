@@ -64,6 +64,11 @@ export const privacy = {
           "**Notifier** — résultats du soir et rappel de vote. Base : votre consentement, " +
           "retirable à tout instant depuis les paramètres de l'application." },
         { type: 'li', text:
+          "**Annoncer les résultats** — publier les podiums sur les comptes officiels de " +
+          "PetMatch, avec la photo, le rang et le nom de l'animal. Base : l'exécution du " +
+          "contrat, dans les limites de la licence de l'article 6 de la charte, et vous " +
+          "pouvez demander à en être retiré." },
+        { type: 'li', text:
           "**Livrer une commande** — nom et adresse postale, uniquement si vous commandez un " +
           "objet. Base : l'exécution du contrat de vente." },
         { type: 'p', text:

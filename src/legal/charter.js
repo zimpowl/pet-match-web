@@ -103,12 +103,44 @@ export const charter = {
       title: '6. Vos droits sur vos photos',
       blocks: [
         { type: 'p', text:
-          "Vos photos **restent les vôtres**. En les publiant, vous accordez à PetMatch une " +
-          "licence non exclusive et gratuite pour les afficher dans l'application, sur ce " +
-          "site et sur les objets que vous commandez, pour la durée de leur publication." },
+          "Vos photos **restent les vôtres**. Vous en gardez la propriété, et vous pouvez " +
+          "retirer une publication à tout moment." },
         { type: 'p', text:
-          "Cette licence ne permet ni la revente de vos photos, ni leur usage publicitaire " +
-          "sans votre accord exprès et préalable." },
+          "En publiant sur PetMatch, vous accordez à PetMatch une licence non exclusive, " +
+          "gratuite et mondiale pour :" },
+        { type: 'li', text:
+          "**afficher la publication** dans l'application, sur ce site, et sur les objets " +
+          "que vous commandez ;" },
+        { type: 'li', text:
+          "**annoncer les résultats** sur les comptes officiels de PetMatch — réseaux " +
+          "sociaux compris — en citant le concours, le rang et le nom de l'animal." },
+        { type: 'p', text:
+          "Cette licence vaut pour la **communication de PetMatch sur ses propres concours**. " +
+          "Elle ne permet ni la revente de vos photos, ni leur usage dans une publicité pour " +
+          "un tiers, ni aucune exploitation sans rapport avec les concours — cela resterait " +
+          "soumis à votre accord exprès et préalable." },
+        { type: 'p', text:
+          "Si vous ne souhaitez pas y figurer, écrivez-nous à " +
+          "**[À COMPLÉTER : adresse de contact]** : nous retirons la publication de nos " +
+          "communications, et nous n'y remettrons pas vos participations suivantes." },
+      ],
+    },
+    {
+      title: '7. Partager une publication',
+      blocks: [
+        { type: 'p', text:
+          "**Toute publication de PetMatch peut être partagée** : par son auteur comme par " +
+          "n'importe qui d'autre, sur les réseaux sociaux ou ailleurs. C'est le principe même " +
+          "d'un concours public — un résultat se montre." },
+        { type: 'p', text:
+          "Ce qui se partage est **la slab** : la photo dans son cadre, avec son thème, son " +
+          "rang, son numéro et le nom de l'animal. Le cadre n'est pas décoratif, il est la " +
+          "source : il dit d'où vient l'image et ce qu'elle prouve." },
+        { type: 'p', text:
+          "Deux limites, et elles sont fermes : ne **recadrez pas** la slab pour en retirer " +
+          "le cadre ou le rang — une image sortie de son cadre peut faire dire à un troisième " +
+          "qu'il a gagné — et n'utilisez pas la publication d'autrui à des fins " +
+          "**commerciales** sans son accord." },
       ],
     },
   ],
