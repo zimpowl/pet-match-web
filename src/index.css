@@ -1,48 +1,48 @@
 @import "tailwindcss";
 
+/* La palette de l'app, à l'identique : le cadre est froid, la photo est chaleureuse. */
 @theme {
-  /* Light Theme */
-  --color-primary: #8E4D30;
-  --color-on-primary: #FFFFFF;
-  --color-primary-container: #FFDBCD;
-  --color-on-primary-container: #71361B;
-  --color-inverse-primary: #FFFFB598;
-  --color-secondary: #77574B;
-  --color-on-secondary: #FFFFFF;
-  --color-secondary-container: #FFE0C8;
-  --color-on-secondary-container: #5D4034;
-  --color-tertiary: #675F30;
-  --color-on-tertiary: #FFFFFF;
-  --color-tertiary-container: #F0E3A8;
-  --color-on-tertiary-container: #4F471B;
-  --color-background: #FFF8F6;
-  --color-on-background: #231A16;
-  --color-surface: #FFF8F6;
-  --color-on-surface: #231A16;
-  --color-surface-variant: #F5DED6;
-  --color-on-surface-variant: #53433E;
-  --color-outline: #85736D;
-  --color-outline-variant: #D8C2BA;
-  --color-surface-container: #FCEAE4;
-  --color-surface-container-low: #FFF1EC;
-  --color-surface-container-high: #F6E4DE;
-  --color-surface-container-highest: #F1DFD9;
+  --color-shelf: #2a2e39;
+  --color-sheet: #343947;
+  --color-shell: #222730;
+  --color-ink: #ffffff;
+  --color-ink-muted: rgb(255 255 255 / 0.70);
+  --color-ink-faint: rgb(255 255 255 / 0.50);
+  --color-rule: rgb(255 255 255 / 0.12);
+
+  --color-gold-start: #7f5c16;
+  --color-gold-end: #caa03a;
+  --color-silver-start: #646a72;
+  --color-silver-end: #9ba1a9;
+  --color-bronze-start: #6f3d1e;
+  --color-bronze-end: #bd7642;
 
   --font-montserrat: "Montserrat", sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-background text-on-background antialiased overflow-x-hidden;
+    @apply bg-shelf text-ink antialiased overflow-x-hidden;
     font-family: var(--font-montserrat);
   }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(var(--rotation, 0deg)); }
-  50% { transform: translateY(-10px) rotate(calc(var(--rotation, 0deg) + 2deg)); }
+/*
+ * Les files dérivent en sens contraires : une seule animation, et la direction
+ * vient du signe. La translation porte sur la moitié de la piste, qui contient
+ * deux copies de la liste — la boucle est donc invisible.
+ */
+@keyframes drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-.animate-float {
-  animation: float 4s ease-in-out infinite;
+.drift {
+  animation: drift var(--drift-duration, 90s) linear infinite;
+  animation-direction: var(--drift-direction, normal);
+  width: max-content;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drift { animation: none; }
 }
