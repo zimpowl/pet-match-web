@@ -31,9 +31,6 @@ export const charter = {
           "**Les mises en scène risquées** : hauteur, eau profonde, circulation, feu, " +
           "chaleur ou froid excessifs, objets pouvant être ingérés." },
         { type: 'li', text:
-          "**Les modifications corporelles illégales** en France : oreilles coupées, queue " +
-          "écourtée hors motif médical, griffes retirées." },
-        { type: 'li', text:
           "**Les substances et accessoires impropres** : alcool, tabac, produits toxiques, " +
           "vêtements ou accessoires entravant la respiration ou le déplacement." },
         { type: 'li', text:
@@ -56,7 +53,7 @@ export const charter = {
       blocks: [
         { type: 'p', text:
           "La photo doit représenter **l'animal inscrit**, et lui seul en sujet principal. " +
-          "Les retouches d'exposition, de cadrage et de couleur sont permises ; le montage, " +
+          "Les retouches d'exposition, de cadrage et de couleur sont permises. Le montage, " +
           "la substitution d'animal et la génération par intelligence artificielle ne le " +
           "sont pas." },
         { type: 'p', text:
@@ -71,8 +68,8 @@ export const charter = {
         { type: 'p', text:
           "Voter engage. Un juré vote **selon son jugement propre**, sur la photo qui lui est " +
           "présentée. Sont interdits :" },
-        { type: 'li', text: "la création de plusieurs comptes pour multiplier ses votes ;" },
-        { type: 'li', text: "l'échange, l'achat ou la vente de votes ;" },
+        { type: 'li', text: "la création de plusieurs comptes pour multiplier ses votes" },
+        { type: 'li', text: "l'échange, l'achat ou la vente de votes" },
         { type: 'li', text: "tout automate, script ou service tiers votant à votre place." },
         { type: 'p', text:
           "Ces comportements entraînent l'annulation des votes concernés, la perte du grade " +
@@ -83,12 +80,9 @@ export const charter = {
       title: '5. Signalement et modération',
       blocks: [
         { type: 'p', text:
-          "Toute publication peut être signalée depuis l'application, ou par courriel à " +
-          "**[À COMPLÉTER : adresse de signalement]**. Un signalement est examiné par une " +
+          "Toute publication peut être signalée depuis l'application." +
+              "Un signalement est examiné par une " +
           "personne, pas par un automate." },
-        { type: 'p', text:
-          "Une publication signalée pour **danger immédiat pour un animal** est retirée " +
-          "pendant l'examen. Les autres restent en ligne jusqu'à décision." },
         { type: 'p', text:
           "Les mesures possibles, par ordre de gravité : retrait de la publication, " +
           "annulation de la participation et de ses résultats, retrait de la confirmation " +
@@ -103,25 +97,31 @@ export const charter = {
       title: '6. Vos droits sur vos photos',
       blocks: [
         { type: 'p', text:
-          "Vos photos **restent les vôtres**. Vous en gardez la propriété, et vous pouvez " +
-          "retirer une publication à tout moment." },
+          "Vos photos **restent les vôtres**. Vous en gardez la propriété, et la licence " +
+          "ci-dessous ne vous en retire rien." },
+        { type: 'p', text:
+          "Tant qu'un concours **n'a pas commencé**, vous pouvez changer la photo d'une " +
+          "inscription ou l'annuler, depuis l'application. Une fois le concours lancé, la " +
+          "participation est engagée : les duels se jouent contre elle, et l'en retirer " +
+          "referait le classement des autres. Elle reste alors en course jusqu'à la clôture, " +
+          "et la slab qui en sort est définitive." },
         { type: 'p', text:
           "En publiant sur PetMatch, vous accordez à PetMatch une licence non exclusive, " +
           "gratuite et mondiale pour :" },
         { type: 'li', text:
           "**afficher la publication** dans l'application, sur ce site, et sur les objets " +
-          "que vous commandez ;" },
+          "que vous commandez" },
         { type: 'li', text:
-          "**annoncer les résultats** sur les comptes officiels de PetMatch — réseaux " +
-          "sociaux compris — en citant le concours, le rang et le nom de l'animal." },
+          "**annoncer les résultats** sur les comptes officiels de PetMatch, réseaux " +
+          "sociaux compris, en citant le concours, le rang et le nom de l'animal." },
         { type: 'p', text:
           "Cette licence vaut pour la **communication de PetMatch sur ses propres concours**. " +
           "Elle ne permet ni la revente de vos photos, ni leur usage dans une publicité pour " +
-          "un tiers, ni aucune exploitation sans rapport avec les concours — cela resterait " +
+          "un tiers, ni aucune exploitation sans rapport avec les concours, cela resterait " +
           "soumis à votre accord exprès et préalable." },
         { type: 'p', text:
           "Si vous ne souhaitez pas y figurer, écrivez-nous à " +
-          "**[À COMPLÉTER : adresse de contact]** : nous retirons la publication de nos " +
+          "**contact@pet-match.fr** : nous retirons la publication de nos " +
           "communications, et nous n'y remettrons pas vos participations suivantes." },
       ],
     },
@@ -130,17 +130,10 @@ export const charter = {
       blocks: [
         { type: 'p', text:
           "**Toute publication de PetMatch peut être partagée** : par son auteur comme par " +
-          "n'importe qui d'autre, sur les réseaux sociaux ou ailleurs. C'est le principe même " +
-          "d'un concours public — un résultat se montre." },
+          "n'importe qui d'autre, sur les réseaux sociaux ou ailleurs." },
         { type: 'p', text:
-          "Ce qui se partage est **la slab** : la photo dans son cadre, avec son thème, son " +
-          "rang, son numéro et le nom de l'animal. Le cadre n'est pas décoratif, il est la " +
-          "source : il dit d'où vient l'image et ce qu'elle prouve." },
-        { type: 'p', text:
-          "Deux limites, et elles sont fermes : ne **recadrez pas** la slab pour en retirer " +
-          "le cadre ou le rang — une image sortie de son cadre peut faire dire à un troisième " +
-          "qu'il a gagné — et n'utilisez pas la publication d'autrui à des fins " +
-          "**commerciales** sans son accord." },
+          "Ce qui se partage est **le certificat** : la photo dans son cadre, avec son thème, son " +
+          "rang, son numéro et le nom de l'animal." },
       ],
     },
   ],
