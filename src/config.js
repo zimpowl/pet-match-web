@@ -9,6 +9,8 @@ export const API_BASE =
 
 export const STORES = {
   play: 'https://play.google.com/store/apps/details?id=com.zimpo.petmatch',
-  // À COMPLÉTER : identifiant App Store, une fois l'application publiée.
-  app: 'https://apps.apple.com/app/petmatch',
+  app: 'https://apps.apple.com/fr/app/petmatch/id6772214932',
 };
+
+/** L'adresse que les documents légaux annoncent, et que les magasins exigent. */
+export const CONTACT = 'contact@pet-match.fr';

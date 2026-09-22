@@ -1,7 +1,8 @@
+/** Les trois médailles partagent l'encre de l'application : blanche sur toutes. */
 const MEDAL = {
-  1: 'from-gold-start to-gold-end text-white',
-  2: 'from-silver-start to-silver-end text-[#111]',
-  3: 'from-bronze-start to-bronze-end text-white',
+  1: 'from-gold-start to-gold-end',
+  2: 'from-silver-start to-silver-end',
+  3: 'from-bronze-start to-bronze-end',
 };
 
 const ordinal = (rank) => (rank === 1 ? '1er' : `${rank}e`);
@@ -14,11 +15,11 @@ const ordinal = (rank) => (rank === 1 ? '1er' : `${rank}e`);
 export default function Slab({ entry }) {
   return (
     <div
-      className="flex h-full shrink-0 flex-col rounded-xl border border-white/10 bg-shell/75 p-1.5"
+      className="flex shrink-0 flex-col rounded-xl border border-white/10 bg-shell/75 p-1.5"
       style={{ width: 'var(--tile)' }}
     >
       <div
-        className={`flex items-center gap-2 rounded-md bg-linear-to-r px-2 py-1 ${MEDAL[entry.rank]}`}
+        className={`flex items-center gap-2 rounded-md bg-linear-to-r px-2 py-1 text-white ${MEDAL[entry.rank]}`}
       >
         <span className="flex-1 truncate text-xs font-semibold">{entry.theme}</span>
         <span className="shrink-0 text-xs">{ordinal(entry.rank)}</span>

@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Cache de déploiement Firebase, et configuration locale de l'agent.
+.firebase/
+.claude/

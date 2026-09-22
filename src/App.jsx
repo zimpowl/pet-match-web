@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import Contact from './pages/Contact.jsx';
 import Home from './pages/Home.jsx';
 import Legal from './pages/Legal.jsx';
 import { API_BASE } from './config.js';
@@ -24,9 +25,11 @@ export default function App() {
         />
       ))}
 
+      <Route path="/contact" element={<Contact />} />
+
       {/* Les anciennes adresses restent valides : elles sont dans les magasins. */}
       <Route path="/privacy" element={<Navigate to="/confidentialite" replace />} />
-      <Route path="/assistance" element={<Navigate to="/" replace />} />
+      <Route path="/assistance" element={<Navigate to="/contact" replace />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

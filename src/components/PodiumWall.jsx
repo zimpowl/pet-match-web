@@ -34,10 +34,9 @@ function Row({ entries, index }) {
 
   return (
     <div
-      className="drift flex gap-2"
+      className="drift flex items-start gap-2"
       style={{
         '--tile': 'clamp(112px, 15vw, 172px)',
-        height: 'calc(var(--tile) + 2.75rem)',
         '--drift-duration': DURATIONS[index],
         '--drift-direction': index % 2 === 0 ? 'normal' : 'reverse',
       }}
