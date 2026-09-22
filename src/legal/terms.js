@@ -11,10 +11,8 @@ export const terms = {
       title: '1. Éditeur',
       blocks: [
         { type: 'p', text:
-          "PetMatch est édité par **[À COMPLÉTER : raison sociale]**, " +
-          "[À COMPLÉTER : forme juridique et capital], RCS [À COMPLÉTER], siège social " +
-          "[À COMPLÉTER : adresse], TVA intracommunautaire [À COMPLÉTER]. " +
-          "Contact : **[À COMPLÉTER : adresse]**." },
+              "Le service PetMatch est édité et opéré à titre indépendant. " +
+              "Pour toute question relative au service, vous pouvez nous contacter par courrier électronique à l'adresse : **contact@pet-match.fr** " },
       ],
     },
     {
@@ -41,7 +39,7 @@ export const terms = {
         { type: 'p', text:
           "Vous pouvez fermer votre compte à tout instant depuis les paramètres. Les " +
           "conséquences de cette fermeture sont décrites à l'article 6 de la **politique de " +
-          "confidentialité** ; lisez-le avant d'agir." },
+          "confidentialité**, lisez-le avant d'agir." },
       ],
     },
     {
@@ -50,7 +48,7 @@ export const terms = {
         { type: 'p', text:
           "Les résultats sont établis par les votes des jurés selon les règles décrites au " +
           "règlement. Le classement général est mis à jour **chaque jour à 18 h 00, heure de " +
-          "Paris** ; les résultats définitifs tombent **chaque dimanche à 18 h 00**." },
+          "Paris**. Les résultats définitifs tombent **chaque dimanche à 18 h 00**." },
         { type: 'p', text:
           "Un résultat définitif est **immuable**. Il ne peut être modifié qu'en cas de " +
           "fraude établie, auquel cas les participations concernées sont annulées et le " +
@@ -88,7 +86,7 @@ export const terms = {
       title: '6. Objets et commandes',
       blocks: [
         { type: 'p', text:
-          "PetMatch propose à la vente des objets commémoratifs — plaques, certificats — " +
+          "PetMatch propose à la vente des objets commémoratifs, plaques, certificats, " +
           "portant votre participation et son numéro. Ils sont **optionnels** : ils ne " +
           "donnent aucun avantage dans les concours et n'ouvrent aucun grade." },
         { type: 'p', text:
@@ -97,8 +95,8 @@ export const terms = {
           "avant validation." },
         { type: 'p', text:
           "**Droit de rétractation** : conformément à l'article L. 221-28 3° du code de la " +
-          "consommation, les objets personnalisés à votre demande — portant la photo, le nom " +
-          "ou le numéro de votre animal — ne sont **pas soumis au droit de rétractation** de " +
+          "consommation, les objets personnalisés à votre demande, portant la photo, le nom " +
+          "ou le numéro de votre animal, ne sont **pas soumis au droit de rétractation** de " +
           "quatorze jours. Cette exclusion vous est rappelée avant le paiement. Les objets " +
           "non personnalisés y restent soumis." },
         { type: 'p', text:
@@ -154,11 +152,10 @@ export const terms = {
       blocks: [
         { type: 'p', text:
           "Les présentes sont soumises au **droit français**. En cas de litige, vous pouvez " +
-          "nous écrire à **[À COMPLÉTER : adresse]** ; nous nous engageons à répondre." },
+          "nous écrire à **contact@pet-match.fr**, nous nous engageons à répondre." },
         { type: 'p', text:
           "À défaut d'accord, vous pouvez recourir gratuitement à un **médiateur de la " +
-          "consommation** : [À COMPLÉTER : nom et adresse du médiateur], ou à la plateforme " +
-          "européenne de règlement en ligne des litiges." },
+          "consommation** ou à la plateforme européenne de règlement en ligne des litiges." },
         { type: 'p', text:
           "Les tribunaux français sont compétents, sans préjudice des règles protectrices " +
           "du consommateur, qui peut saisir la juridiction de son lieu de résidence." },

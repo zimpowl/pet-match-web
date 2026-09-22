@@ -3,25 +3,19 @@ export const privacy = {
   title: 'Politique de confidentialité',
   updated: '13 septembre 2026',
   intro:
-    "PetMatch traite des données personnelles pour faire fonctionner ses concours. " +
-    "Ce document dit **lesquelles, pourquoi, combien de temps, et ce que vous pouvez exiger**. " +
-    "Il est écrit pour être lu, pas pour être opposé.",
+    "PetMatch traite des données personnelles pour faire fonctionner ses concours.",
   sections: [
     {
       title: '1. Responsable du traitement',
       blocks: [
         { type: 'p', text:
-          "Le responsable du traitement est **[À COMPLÉTER : raison sociale]**, " +
-          "[À COMPLÉTER : forme juridique et capital], immatriculée au RCS de " +
-          "[À COMPLÉTER] sous le numéro [À COMPLÉTER], dont le siège est situé " +
-          "[À COMPLÉTER : adresse]." },
+              "Le service PetMatch est édité et opéré à titre indépendant. " +
+              "Pour toute question relative à l'édition du service, vous pouvez nous contacter par courrier électronique." },
         { type: 'p', text:
-          "Directeur de la publication : **[À COMPLÉTER]**. " +
-          "Contact pour toute question relative aux données : **[À COMPLÉTER : adresse]**." },
+              "Contact pour toute question relative aux données et à la publication : **contact@pet-match.fr** " },
         { type: 'p', text:
-          "Hébergeur : **[À COMPLÉTER : nom et adresse de l'hébergeur du site]**. " +
-          "L'application et ses données s'appuient sur **Google Firebase** " +
-          "(Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande)." },
+              "Hébergeur : **Google Ireland Limited**, Gordon House, Barrow Street, Dublin 4, Irlande. " +
+              "L'application et ses données s'appuient entièrement sur l'infrastructure sécurisée de **Google Firebase**." },
       ],
     },
     {
@@ -51,26 +45,22 @@ export const privacy = {
       title: '3. Pourquoi, et sur quelle base',
       blocks: [
         { type: 'li', text:
-          "**Faire fonctionner le service** — compte, profil, concours, votes, classements, " +
-          "grades. Base : l'exécution du contrat qui nous lie (les conditions d'utilisation)." },
+          "**Faire fonctionner le service** : compte, profil, concours, votes, classements, " +
+          "grades." },
         { type: 'li', text:
-          "**Confirmer une identité** — vérifier qu'un juré est une personne réelle et qu'un " +
-          "animal existe et n'est pas inscrit deux fois. Base : l'exécution du contrat et " +
-          "notre intérêt légitime à empêcher la fraude." },
+          "**Confirmer une identité** : vérifier qu'un juré est une personne réelle et qu'un " +
+          "animal existe et n'est pas inscrit deux fois." },
         { type: 'li', text:
-          "**Modérer** — appliquer la charte de publication, protéger les animaux et les " +
-          "personnes. Base : notre intérêt légitime, et le respect de nos obligations légales." },
+          "**Modérer** : appliquer la charte de publication, protéger les animaux et les " +
+          "personnes." },
         { type: 'li', text:
-          "**Notifier** — résultats du soir et rappel de vote. Base : votre consentement, " +
-          "retirable à tout instant depuis les paramètres de l'application." },
+          "**Notifier** : résultats du soir et rappel de vote." },
         { type: 'li', text:
-          "**Annoncer les résultats** — publier les podiums sur les comptes officiels de " +
-          "PetMatch, avec la photo, le rang et le nom de l'animal. Base : l'exécution du " +
-          "contrat, dans les limites de la licence de l'article 6 de la charte, et vous " +
-          "pouvez demander à en être retiré." },
+          "**Annoncer les résultats** : publier les podiums sur les comptes officiels de " +
+          "PetMatch, avec la photo, le rang et le nom de l'animal." },
         { type: 'li', text:
-          "**Livrer une commande** — nom et adresse postale, uniquement si vous commandez un " +
-          "objet. Base : l'exécution du contrat de vente." },
+          "**Livrer une commande** : nom et adresse postale, uniquement si vous commandez un " +
+          "objet." },
         { type: 'p', text:
           "Nous ne vendons aucune donnée. Nous ne faisons **aucune publicité ciblée** et " +
           "n'utilisons **aucun traceur publicitaire**." },
@@ -80,19 +70,19 @@ export const privacy = {
       title: '4. Combien de temps',
       blocks: [
         { type: 'li', text:
-          "**Compte et profil** : tant que le compte existe, puis **[À COMPLÉTER : 12 mois " +
-          "recommandé]** après sa fermeture." },
+          "**Compte et profil** : tant que le compte existe, puis **12 mois** " +
+          "après sa fermeture." },
         { type: 'li', text:
-          "**Pièces d'identité** : effacées **dès la décision prise**, et au plus tard " +
-          "trente jours après leur dépôt. Seul le résultat — confirmé ou non — est conservé." },
+          "**Pièces d'identité** : conservées **cinq ans** à compter de leur dépôt, comme " +
+          "justificatif de la confirmation accordée, puis effacées automatiquement. Elles " +
+          "sont effacées avant cette échéance dès la fermeture de votre compte." },
         { type: 'li', text:
           "**Participations, votes et résultats** : conservés **sans limite de durée**, sous " +
-          "une forme dissociée de votre identité vivante après la fermeture du compte — voir " +
-          "l'article 6." },
+          "une forme dissociée de votre identité vivante après la fermeture du compte." },
         { type: 'li', text:
-          "**Journaux techniques** : douze mois." },
+          "**Journaux techniques** : 12 mois." },
         { type: 'li', text:
-          "**Factures et pièces comptables** : dix ans, obligation légale." },
+          "**Factures et pièces comptables** : dix ans." },
       ],
     },
     {
@@ -102,32 +92,27 @@ export const privacy = {
           "Vos données ne sont accessibles qu'aux personnes qui en ont besoin, et à nos " +
           "prestataires techniques, qui agissent sur nos instructions :" },
         { type: 'li', text:
-          "**Google Firebase** — hébergement, base de données, authentification, stockage " +
+          "**Google Firebase** : hébergement, base de données, authentification, stockage " +
           "des fichiers et notifications." },
-        { type: 'li', text: "**[À COMPLÉTER : prestataire de paiement]** — encaissement des commandes." },
-        { type: 'li', text: "**[À COMPLÉTER : imprimeur / logisticien]** — fabrication et envoi des objets." },
         { type: 'p', text:
           "Certains de ces prestataires peuvent traiter des données **hors de l'Union " +
           "européenne**. Ces transferts sont encadrés par les clauses contractuelles types " +
           "de la Commission européenne et, pour les États-Unis, par le cadre de protection " +
-          "des données UE–États-Unis." },
+          "des données États-Unis." },
       ],
     },
     {
       title: '6. Ce qui reste quand vous partez',
       blocks: [
         { type: 'p', text:
-          "C'est le point le plus important de ce document, et il mérite d'être dit " +
-          "clairement. Lorsque vous supprimez votre compte ou l'un de vos animaux, **votre " +
+          "Lorsque vous supprimez votre compte ou l'un de vos animaux, **votre " +
           "identité vivante disparaît** : pseudonyme, photo de profil, jeton de notification. " +
-          "Votre profil s'affiche dès lors comme un compte supprimé." },
+          "Votre profil s'affiche dès lors comme un compte supprimé. **Les pièces d'identité " +
+          "que vous aviez déposées sont effacées** : elles ne justifient plus rien." },
         { type: 'p', text:
           "En revanche, **les concours déjà joués conservent leur trace**. Vos votes restent " +
           "comptés, et les photos ainsi que le nom sous lesquels une participation a été " +
-          "enregistrée demeurent attachés à ce concours-là. La raison est de fond : retirer " +
-          "un vote modifierait le classement de tous les autres participants, et réécrire un " +
-          "concours clos reviendrait à réécrire le palmarès de personnes qui n'ont rien " +
-          "demandé." },
+          "enregistrée demeurent attachés à ce concours-là." },
         { type: 'p', text:
           "Si vous souhaitez néanmoins l'effacement d'une participation précise, écrivez-nous : " +
           "nous examinons chaque demande et procédons à l'effacement lorsque l'intégrité des " +
@@ -142,12 +127,9 @@ export const privacy = {
           "**limitation**, d'**opposition** et de **portabilité**, ainsi que du droit de " +
           "définir des directives sur le sort de vos données après votre décès." },
         { type: 'p', text:
-          "Pour les exercer, écrivez à **[À COMPLÉTER : adresse]**. Nous répondons dans un " +
+          "Pour les exercer, écrivez à **contact@pet-match.fr**. Nous répondons dans un " +
           "délai d'un mois. Une pièce d'identité peut vous être demandée en cas de doute " +
-          "raisonnable sur votre identité ; elle est effacée dès la réponse envoyée." },
-        { type: 'p', text:
-          "Vous pouvez également introduire une réclamation auprès de la **CNIL** " +
-          "(3 place de Fontenoy, 75007 Paris — cnil.fr)." },
+          "raisonnable sur votre identité, elle est effacée dès la réponse envoyée." },
       ],
     },
     {
