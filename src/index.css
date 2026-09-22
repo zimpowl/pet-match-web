@@ -16,6 +16,8 @@
   --color-silver-end: #9ba1a9;
   --color-bronze-start: #6f3d1e;
   --color-bronze-end: #bd7642;
+  --color-identity-start: #000000;
+  --color-identity-end: #2d3436;
 
   --font-montserrat: "Montserrat", sans-serif;
 }

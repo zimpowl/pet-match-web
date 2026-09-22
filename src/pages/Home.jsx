@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import PodiumWall from '../components/PodiumWall.jsx';
+import PodiumDecks from '../components/PodiumDecks.jsx';
 import { STORES } from '../config.js';
 
 const LINKS = [
@@ -15,7 +15,7 @@ const LINKS = [
  */
 export default function Home({ entries }) {
   return (
-    <div className="flex h-dvh flex-col overflow-hidden">
+    <div className="flex min-h-dvh flex-col">
       <header className="flex shrink-0 flex-col items-center px-6 pt-12 text-center sm:pt-16">
         <img src="/ic_logo.png" alt="" className="h-20 w-20 invert" />
         <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">PetMatch</h1>
@@ -29,8 +29,8 @@ export default function Home({ entries }) {
         </div>
       </header>
 
-      <main className="mt-10 min-h-0 flex-1 overflow-hidden">
-        <PodiumWall entries={entries} />
+      <main className="min-h-0 flex-1 overflow-hidden px-6 py-8">
+        <PodiumDecks entries={entries} />
       </main>
 
       <footer className="flex shrink-0 flex-wrap items-center justify-center gap-x-6 gap-y-2 px-6 py-6 text-sm text-ink-faint">
