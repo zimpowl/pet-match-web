@@ -87,13 +87,16 @@ npx firebase deploy --only hosting --project pet-match---debug
 
 ## Ce qu'il faut savoir avant de publier
 
-- **Le lien App Store est un gabarit.** `src/config.js` porte
-  `https://apps.apple.com/app/petmatch` : il faudra l'identifiant réel une fois
-  l'application publiée.
-- **Le backend visé en production.** `src/config.js` retombe sur debug sans
-  `VITE_API_BASE`. Vite fige la variable **au moment du build** : pour un
-  déploiement de production, construire avec la bonne valeur, ou changer le
-  défaut dans `config.js`.
+- **Le backend visé.** `src/config.js` pointe sur la **production** par défaut
+  depuis le 2026-10-01. Vite fige cette valeur **au moment du build** : un défaut
+  pointant vers debug produisait un site muet au moindre `npm run build` oublié,
+  et c'est exactement ce qui est arrivé — la vitrine a servi des podiums vides
+  le temps qu'on s'en aperçoive. Pour développer contre debug, passer
+  `VITE_API_BASE=… npm run dev`, jamais l'inverse.
+- **`/go/**` doit rester la première réécriture** de `firebase.json`, devant
+  l'attrape-tout vers `index.html`. Elle route les liens courts vers la fonction
+  `goHttp` du backend. Si l'ordre s'inverse, le SPA avale le chemin : les liens
+  afficheront la page d'accueil sans rien compter, et rien ne le signalera.
 - **Les adresses légales sont dans les magasins.** `/confidentialite`,
   `/charte`, `/conditions`. `/privacy` redirige vers l'adresse actuelle : ne pas
   la retirer.
