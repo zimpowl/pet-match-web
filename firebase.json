@@ -9,6 +9,11 @@
     "trailingSlash": false,
     "rewrites": [
       {
+        "source": "/go/**",
+        "function": "goHttp",
+        "region": "us-central1"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
